@@ -8,7 +8,8 @@
     const temp_pem = jwkToPem(jwk);
     pems[key_id] = temp_pem;
   });
-const expireDate = new Date(validTo).toLocaleString("en-US", {
+
+const expireDate1 = new Date(validTo).toLocaleString("en-US", {
   year: "numeric",
   month: "long",
   day: "numeric",
@@ -16,7 +17,7 @@ const expireDate = new Date(validTo).toLocaleString("en-US", {
 });
 
 
-const expireDate1 = new Date(validTo).toLocaleString("en-US", {
+const expireDate2 = new Date(validTo).toLocaleString("en-US", {
   year: "numeric",
   month: "long",
   day: "numeric",
