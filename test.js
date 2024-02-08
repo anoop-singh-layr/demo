@@ -8,3 +8,9 @@
     const temp_pem = jwkToPem(jwk);
     pems[key_id] = temp_pem;
   });
+const expireDate = new Date(validTo).toLocaleString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "America/New_York",
+});
