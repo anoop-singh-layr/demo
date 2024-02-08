@@ -9,6 +9,8 @@
     pems[key_id] = temp_pem;
   });
 
+const validTo = 1695945600000;
+
 const expireDate1 = new Date(validTo).toLocaleString("en-US", {
   year: "numeric",
   month: "long",
