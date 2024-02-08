@@ -14,3 +14,11 @@ const expireDate = new Date(validTo).toLocaleString("en-US", {
   day: "numeric",
   timeZone: "America/New_York",
 });
+
+
+const expireDate1 = new Date(validTo).toLocaleString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "UTC",
+});
