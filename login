@@ -21,3 +21,11 @@ userPool.signUp('username', 'password', attributeList, null, (err, result) => {
     const cognitoUser = result.user;
     console.log('user name is ' + cognitoUser.getUsername());
 });
+
+function Login() {
+    var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails({
+        Username : 'sampleEmail@gmail.com',
+        Password : 'SamplePassword123',
+    });
+
+}
