@@ -28,4 +28,12 @@ function Login() {
         Password : 'SamplePassword123',
     });
 
+
+    var userData = {
+        Username : 'sampleEmail@gmail.com',
+        Pool : userPool
+    };
+
+    });
+
 }
