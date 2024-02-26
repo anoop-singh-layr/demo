@@ -12,3 +12,10 @@ AWS.config.update({
 var s3 = new AWS.S3();
 var filePath = "./data/file.txt";
 
+//configuring parameters
+var params = {
+  Bucket: '<Bucket Name Here>',
+  Body : fs.createReadStream(filePath),
+  Key : "folder/"+Date.now()+"_"+path.basename(filePath)
+};
+
