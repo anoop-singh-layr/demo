@@ -19,3 +19,14 @@ var params = {
   Key : "folder/"+Date.now()+"_"+path.basename(filePath)
 };
 
+s3.upload(params, function (err, data) {
+  //handle error
+  if (err) {
+    console.log("Error", err);
+  }
+
+  //success
+  if (data) {
+    console.log("Uploaded in:", data.Location);
+  }
+});
