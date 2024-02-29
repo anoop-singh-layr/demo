@@ -2,6 +2,8 @@ import { CognitoUserPool, CognitoUserAttribute } from 'amazon-cognito-identity-j
 
 const userPool = new CognitoUserPool(poolData);
 
+// empty 
+
 const attributeList = [];
 
 const dataEmail = {
