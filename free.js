@@ -128,4 +128,4 @@ export function addCorsOptions(apiResource: IResource) {
 
 const app = new App();
 new ApiLambdaCrudDynamoDBStack(app, 'ApiLambdaCrudDynamoDBExample');
-app.synth();
+
